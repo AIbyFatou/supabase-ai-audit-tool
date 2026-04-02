@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Button from './design_system/button/Button'
+import Button from './common/design_system/button/Button'
+import StatusBadge from './common/features/StatusBadge/statusBadge'
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <Button text={"Hello"} onClick={() => console.log("clicked")}/>
+        <StatusBadge status={"missing"} title={".gitignore Presence"} message={"lacking a gitinore file"} recommendation={"add one"} />
+        <Button text={"export to PDF"} onClick={() => console.log("clicked")}/>
       </section>
     </>
   )
